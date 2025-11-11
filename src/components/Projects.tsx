@@ -6,6 +6,32 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "MW Immigration",
+      description: "Professional immigration consulting website for MW Immigration services, providing comprehensive information about Canadian immigration services and consultation.",
+      highlights: [
+        "Built professional business website with modern design",
+        "Implemented responsive layout for optimal mobile experience",
+        "Created clear service presentation and contact flows",
+        "Deployed and maintained live production website",
+      ],
+      tags: ["React", "Web Development", "Responsive Design", "Professional Site"],
+      period: "2024",
+      liveUrl: "https://mwimmigration.org",
+    },
+    {
+      title: "United Rice Co",
+      description: "E-commerce website for United Rice Company, showcasing rice products and facilitating online business operations for a rice distribution company.",
+      highlights: [
+        "Developed e-commerce platform with product catalog",
+        "Implemented business-focused design and user experience",
+        "Created responsive interface for various devices",
+        "Deployed and managing live business website",
+      ],
+      tags: ["React", "E-commerce", "Business Website", "Web Development"],
+      period: "2024",
+      liveUrl: "https://unitedrice.co",
+    },
+    {
       title: "Pickup and Ride DBMS",
       description: "A comprehensive SQL database system for a ride-sharing application featuring normalized tables and optimized real-time queries for driver-rider matching.",
       highlights: [
@@ -72,14 +98,27 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button size="sm" variant="outline" className="group/btn">
-                    <Github className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                    View Code
-                  </Button>
-                  <Button size="sm" className="group/btn">
-                    <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                    Live Demo
-                  </Button>
+                  {project.liveUrl ? (
+                    <Button 
+                      size="sm" 
+                      className="group/btn"
+                      onClick={() => window.open(project.liveUrl, '_blank')}
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                      Visit Website
+                    </Button>
+                  ) : (
+                    <>
+                      <Button size="sm" variant="outline" className="group/btn">
+                        <Github className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                        View Code
+                      </Button>
+                      <Button size="sm" className="group/btn">
+                        <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                        Live Demo
+                      </Button>
+                    </>
+                  )}
                 </div>
               </Card>
             ))}

@@ -28,12 +28,12 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/asadmalik",
+      url: "https://github.com/asadmx",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/asadmalik",
+      url: "https://www.linkedin.com/in/asad-s-malik",
     },
     {
       icon: ExternalLink,

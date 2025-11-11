@@ -57,7 +57,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex gap-6 justify-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
             <a
-              href="https://github.com/asadmalik"
+              href="https://github.com/asadmx"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-all hover:scale-110"
@@ -66,7 +66,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/asadmalik"
+              href="https://www.linkedin.com/in/asad-s-malik"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-all hover:scale-110"
