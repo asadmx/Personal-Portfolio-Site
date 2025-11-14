@@ -4,6 +4,22 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
+  const featuredProject = {
+    title: "SellStatic",
+    description: "Full-stack digital platform for SellStatic, a startup focused on lead generation, analytics, and investor engagement. Engineered scalable backend systems and responsive front-end components used by hundreds of customers.",
+    highlights: [
+      "Engineered scalable backend with PHP and Next.js for dynamic content delivery",
+      "Built modular UI/UX templates for conversion-optimized layouts",
+      "Developed responsive components with WordPress, Breakdance, and JavaScript",
+      "Implemented authentication flows and third-party integrations",
+      "Maintained version control using Git and GitHub in agile environment",
+    ],
+    tags: ["PHP", "Next.js", "WordPress", "Breakdance", "JavaScript", "REST APIs", "Git"],
+    period: "2025",
+    liveUrl: "https://sellstatic.com",
+    featured: true,
+  };
+
   const projects = [
     {
       title: "MW Immigration",
@@ -64,6 +80,52 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12" />
 
+          {/* Featured Project */}
+          <Card className="p-8 md:p-10 mb-8 hover:shadow-2xl transition-all duration-300 border-2 border-primary/20 bg-card group relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="relative z-10">
+              <div className="flex items-center gap-2 mb-4">
+                <Badge className="bg-primary text-primary-foreground">Featured</Badge>
+              </div>
+              <div className="mb-6">
+                <h3 className="text-3xl md:text-4xl font-bold text-card-foreground mb-3 group-hover:text-primary transition-colors">
+                  {featuredProject.title}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">{featuredProject.period}</p>
+                <p className="text-muted-foreground leading-relaxed text-lg mb-6">
+                  {featuredProject.description}
+                </p>
+              </div>
+
+              <ul className="space-y-3 mb-6">
+                {featuredProject.highlights.map((highlight, i) => (
+                  <li key={i} className="flex gap-3 text-muted-foreground">
+                    <span className="text-accent mt-1">•</span>
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                {featuredProject.tags.map((tag, i) => (
+                  <Badge key={i} variant="secondary">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+
+              {featuredProject.liveUrl && (
+                <Button asChild size="lg" className="group/btn">
+                  <a href={featuredProject.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-5 w-5 group-hover/btn:rotate-12 transition-transform" />
+                    Visit Website
+                  </a>
+                </Button>
+              )}
+            </div>
+          </Card>
+
+          {/* Other Projects */}
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <Card
