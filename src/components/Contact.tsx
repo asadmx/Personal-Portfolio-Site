@@ -35,11 +35,6 @@ const Contact = () => {
       label: "LinkedIn",
       url: "https://www.linkedin.com/in/asad-s-malik",
     },
-    {
-      icon: ExternalLink,
-      label: "Portfolio",
-      url: "#",
-    },
   ];
 
   return (
