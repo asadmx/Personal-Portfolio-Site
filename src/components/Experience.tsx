@@ -5,18 +5,6 @@ import { Briefcase, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      role: "Server",
-      company: "Eggsmart",
-      location: "Ontario, Canada",
-      period: "Sept. 2025 - Present",
-      description: [
-        "Provide friendly, efficient table service in a fast-paced breakfast restaurant",
-        "Handle orders, payments, and customer requests with a positive attitude",
-        "Maintain clean dining areas and support smooth kitchen–front-of-house communication",
-      ],
-      tags: ["Customer Service", "Communication", "Fast-Paced Environment", "Team Collaboration"],
-    },
-    {
       role: "Software Engineer Intern",
       company: "SellStatic",
       location: "Toronto, ON",
@@ -67,6 +55,18 @@ const Experience = () => {
         "Demonstrated strong problem-solving and adaptability in fast-paced environment, coordinating shift schedules and managing peak-hour service for 100+ daily customers",
       ],
       tags: ["Leadership", "Operations", "Process Optimization", "Team Management", "Problem Solving"],
+    },
+    {
+      role: "Server",
+      company: "Eggsmart",
+      location: "Ontario, Canada",
+      period: "Sept. 2025 - Present",
+      description: [
+        "Provide friendly, efficient table service in a fast-paced breakfast restaurant",
+        "Handle orders, payments, and customer requests with a positive attitude",
+        "Maintain clean dining areas and support smooth kitchen–front-of-house communication",
+      ],
+      tags: ["Customer Service", "Communication", "Fast-Paced Environment", "Team Collaboration"],
     },
   ];
 
