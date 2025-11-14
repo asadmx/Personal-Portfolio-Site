@@ -5,6 +5,18 @@ import { Briefcase, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      role: "Server",
+      company: "Eggsmart",
+      location: "Ontario, Canada",
+      period: "Sept. 2025 - Present",
+      description: [
+        "Provide friendly, efficient table service in a fast-paced breakfast restaurant",
+        "Handle orders, payments, and customer requests with a positive attitude",
+        "Maintain clean dining areas and support smooth kitchen–front-of-house communication",
+      ],
+      tags: ["Customer Service", "Communication", "Fast-Paced Environment", "Team Collaboration"],
+    },
+    {
       role: "Software Engineer Intern",
       company: "SellStatic",
       location: "Toronto, ON",
@@ -30,6 +42,18 @@ const Experience = () => {
         "Collaborated with data science team to refine training datasets and fine-tune model parameters, enhancing conversational AI coherence and user satisfaction scores",
       ],
       tags: ["AI/ML", "LLM", "NLP", "QA Testing", "Data Analysis"],
+    },
+    {
+      role: "Wedding & Event Decorator",
+      company: "Freelance",
+      location: "Ontario, Canada",
+      period: "Sept. 2023 - Present",
+      description: [
+        "Design and set up event décor for weddings, parties, and cultural events",
+        "Coordinate with clients to match themes, colours, and layout visions",
+        "Manage décor inventory, props, and setup/teardown to ensure flawless event execution",
+      ],
+      tags: ["Event Planning", "Design", "Client Coordination", "Project Management"],
     },
     {
       role: "Shift Supervisor",
