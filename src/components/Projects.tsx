@@ -31,7 +31,7 @@ const Projects = () => {
         "Deployed and maintained live production website",
       ],
       tags: ["React", "Web Development", "Responsive Design", "Professional Site"],
-      period: "2024",
+      period: "2025",
       liveUrl: "https://mwimmigration.org",
     },
     {
@@ -44,7 +44,7 @@ const Projects = () => {
         "Deployed and managing live business website",
       ],
       tags: ["React", "E-commerce", "Business Website", "Web Development"],
-      period: "2024",
+      period: "2025",
       liveUrl: "https://unitedrice.co",
     },
     {
@@ -159,8 +159,8 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
-                  {project.liveUrl ? (
+                {project.liveUrl && (
+                  <div className="flex gap-3">
                     <Button 
                       size="sm" 
                       className="group/btn"
@@ -169,19 +169,8 @@ const Projects = () => {
                       <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
                       Visit Website
                     </Button>
-                  ) : (
-                    <>
-                      <Button size="sm" variant="outline" className="group/btn">
-                        <Github className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                        View Code
-                      </Button>
-                      <Button size="sm" className="group/btn">
-                        <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                        Live Demo
-                      </Button>
-                    </>
-                  )}
-                </div>
+                  </div>
+                )}
               </Card>
             ))}
           </div>
