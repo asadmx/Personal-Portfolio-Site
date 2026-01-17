@@ -22,6 +22,19 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "NBA Clutch Analyzer",
+      description: "Interactive web application that analyzes NBA players' clutch performance statistics, providing insights into player performance during high-pressure game situations.",
+      highlights: [
+        "Built interactive data visualization dashboard for clutch performance metrics",
+        "Implemented advanced statistical analysis for high-pressure game situations",
+        "Created responsive UI with real-time data filtering and sorting capabilities",
+        "Deployed live application with seamless user experience",
+      ],
+      tags: ["Python", "Data Analytics", "Web Development", "Sports Analytics", "Visualization"],
+      period: "2025",
+      liveUrl: "https://nba-clutch-analyzer.onrender.com/",
+    },
+    {
       title: "MW Immigration",
       description: "Professional immigration consulting website for MW Immigration services, providing comprehensive information about Canadian immigration services and consultation.",
       highlights: [
