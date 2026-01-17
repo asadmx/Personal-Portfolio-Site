@@ -5,18 +5,30 @@ import { Briefcase, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      role: "Software Engineer Intern",
+      role: "Full Stack Engineer Intern",
       company: "SellStatic",
       location: "Toronto, ON",
-      period: "Apr. 2025 - Current",
+      period: "Sept. 2025 - Current",
       description: [
-        "Engineered scalable backend systems using PHP and Next.js, supporting dynamic content delivery, authentication flows, and robust third-party integrations for lead generation, analytics, and investor engagement",
-        "Partnered closely with the founding team to translate evolving business goals into resilient technical architecture, building a scalable digital platform that balanced performance, security, and future-proof flexibility",
-        "Maintained reliable version control using Git and GitHub, managing feature branches, resolving merge conflicts efficiently, and supporting continuous integration in a fast-paced, agile development environment",
-        "Developed responsive and accessible front-end components with Breakdance, WordPress, HTML, CSS, and JavaScript, ensuring consistent cross-browser compatibility and smooth user interactions across devices",
-        "Led the design and implementation of modular UI/UX templates used by hundreds of customers, creating visually appealing, conversion-optimized layouts that improved usability and supported flexible brand customization",
+        "Built and scaled Java-based backend services using Spring Boot, designing and maintaining RESTful APIs that handle authentication, data processing, and content delivery for a production platform accessed by thousands of users",
+        "Designed and optimized backend workflows for automated ad and website generation, coordinating multiple Java services and API pipelines to increase generation speed by 300% while maintaining reliability under real user load",
+        "Designed and implemented 100+ reusable social media templates, making it easy for users to generate and upload ads directly from the platform to social channels, while the backend efficiently handled customization, asset management, and high user demand",
+        "Integrated third-party APIs and data scraping solutions into the platform, storing and querying structured data with MongoDB, and deploying backend services on AWS to support scalability, uptime, and smooth operation in production environments",
+        "Built 5+ fully functional customer websites from end to end, collaborating closely with teammates through GitHub for version control, code reviews, and feature iteration, and contributing to a product recognized as Top 10 at WebSummit 2025",
       ],
-      tags: ["PHP", "Next.js", "WordPress", "JavaScript", "HTML", "CSS", "Breakdance", "Git", "GitHub", "REST APIs"],
+      tags: ["Java", "Spring Boot", "MongoDB", "AWS", "REST APIs", "Git", "GitHub"],
+    },
+    {
+      role: "Game Developer Intern",
+      company: "AgentFlow AI",
+      location: "Toronto, ON",
+      period: "May 2025 - Sept. 2025",
+      description: [
+        "Designed and built AI-driven agents using large language models, implementing core logic and services in Java to support interactive gameplay systems with 30+ branching states and story paths, used across multiple game prototypes and internal demos",
+        "Built structured prompt pipelines, tool schemas, and API integrations in Java, enabling agents to dynamically generate gameplay mechanics, dialogue, and narrative content, improving generation speed by 2–3× and reducing latency across hundreds of automated generation runs",
+        "Tested, refined, and shipped agent behavior using 100+ user interaction sessions, collaborating through Git and GitHub for version control and code reviews, improving response consistency, state accuracy, and overall gameplay stability across releases",
+      ],
+      tags: ["Java", "LLM", "AI Agents", "Game Development", "API Integration", "Git", "GitHub"],
     },
     {
       role: "VP of Finance",
