@@ -33,7 +33,7 @@ const Experience = () => {
     {
       role: "VP of Finance",
       company: "UX Laurier",
-      location: "Hamilton, ON",
+      location: "Waterloo, ON",
       period: "Sept. 2025 - Current",
       description: [
         "Lead financial strategy and operations for a student-run UX organization, overseeing yearly budgets and ensuring fiscal responsibility across multiple initiatives",
@@ -85,7 +85,7 @@ const Experience = () => {
     {
       role: "Server",
       company: "Eggsmart",
-      location: "Ontario, Canada",
+      location: "Milton, ON",
       period: "Sept. 2025 - Present",
       description: [
         "Provide friendly, efficient table service in a fast-paced breakfast restaurant",
