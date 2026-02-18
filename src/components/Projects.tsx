@@ -35,6 +35,31 @@ const Projects = () => {
       liveUrl: "https://nba-clutch-analyzer.onrender.com/",
     },
     {
+      title: "Shopping Analytics Dashboard",
+      description: "Full-stack analytics dashboard with interactive KPI views, filtering, and data-driven visualizations for customer and order trends across categories, pricing, and discounts.",
+      highlights: [
+        "Built interactive KPI views and data-driven visualizations with Plotly",
+        "Designed RESTful APIs for aggregate metrics like AOV, revenue, and cohorts",
+        "Integrated PostgreSQL for ingestion and querying of transactional datasets",
+        "Optimized endpoints for scalable, maintainable backend structure",
+      ],
+      tags: ["Python", "Streamlit", "PostgreSQL", "Plotly", "Data Analytics"],
+      period: "2025",
+      liveUrl: "https://asad-dashboard.streamlit.app/",
+    },
+    {
+      description: "Interactive web application that analyzes NBA players' clutch performance statistics, providing insights into player performance during high-pressure game situations.",
+      highlights: [
+        "Built interactive data visualization dashboard for clutch performance metrics",
+        "Implemented advanced statistical analysis for high-pressure game situations",
+        "Created responsive UI with real-time data filtering and sorting capabilities",
+        "Deployed live application with seamless user experience",
+      ],
+      tags: ["Python", "Data Analytics", "Web Development", "Sports Analytics", "Visualization"],
+      period: "2025",
+      liveUrl: "https://nba-clutch-analyzer.onrender.com/",
+    },
+    {
       title: "MW Immigration",
       description: "Professional immigration consulting website for MW Immigration services, providing comprehensive information about Canadian immigration services and consultation.",
       highlights: [
