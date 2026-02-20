@@ -32,7 +32,7 @@ const Projects = () => {
       ],
       tags: ["Python", "Data Analytics", "Web Development", "Sports Analytics", "Visualization"],
       period: "2025",
-      liveUrl: "https://nba-clutch-analyzer.onrender.com/",
+      liveUrl: "https://nba-clutch-analyzer-production.up.railway.app/",
     },
     {
       title: "Shopping Analytics Dashboard",
